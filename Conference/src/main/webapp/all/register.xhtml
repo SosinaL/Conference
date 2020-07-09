@@ -51,23 +51,24 @@
 					<h:inputText id="lastname" value="#{user.lastname}" p:required="true" p:placeholder="Lastname" /> 
 		                         
 		                        <h:message for="lastname" style="color:red" /><br></br>              
-		                        Username:
+		                         Username:
 		 
 					<h:inputText  id="username" value="#{user.username}"  p:required="true" p:placeholder="Username" /> 
 		                        <h:message for="username" style="color:red" /><br></br>
-	                               Password:
+	                                 Password:
 					<h:inputSecret  id="password" value="#{user.password}"   p:placeholder="Password"  p:required="true" />
 	                                <h:message for="password" style="color:red" /><br></br>
 	                                 Confirm password:
 					<h:inputText  id="confirmPassword" p:placeholder="Confirm Password"  p:required="true" />
 	                                <h:message for="confirmPassword" style="color:red" /><br></br> 
-
+                                        
+                                         Fullname:
 					<h:inputText  id="fullname" value="#{user.fullname}" p:placeholder="Fullname"  p:required="true"  />
                                         <h:message for="fullname" style="color:red" /><br></br>
-
+                                         Email:
 					<h:inputText  id="email" value="#{user.email}"  p:required="true" p:placeholder="Email Address"   p:type="email" />
                                         <h:message for="email" style="color:red" /><br></br>
-
+                                         Mobile:
 					<h:inputText  id="mobile" value="#{user.mobile}" p:pattern="^\d{10}$"  p:placeholder="10 digit mobile number"   maxlength="10"/>
                                         <h:message for="mobile" style="color:red" /><br></br>
 
