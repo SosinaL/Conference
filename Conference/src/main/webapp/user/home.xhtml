@@ -1,0 +1,17 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="menu.xhtml"
+                xmlns:p="http://java.sun.com/jsf/passthrough"
+                xmlns:h="http://java.sun.com/jsf/html">
+              
+                
+                    
+<p:contentFlow value="#{imagesView.images}" var="image">
+    <p:graphicImage url="resouces/img/16-1.gif/#(image)" styleClass="content" 
+  />
+   <p:graphicImage url="resouces/img/article-1.png/#(image)" styleClass="content" 
+  />
+    <div class="caption">#{image}</div>
+    
+</p:contentFlow>
+ </ui:composition>

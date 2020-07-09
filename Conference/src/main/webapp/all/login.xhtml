@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="templatepage.xhtml"
+	xmlns:p="http://java.sun.com/jsf/passthrough"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="content">
+		<fieldset>
+			<h:form>
+
+				<link
+					href='http://fonts.googleapis.com/css?family=Montserrat:400,700'
+					rel='stylesheet' type='text/css' />
+
+				<div class="logo"></div>
+				<div class="login-block">
+					<h1>Login</h1>
+					<input type="text"  placeholder="Username" id="username"  value="#{user.username}" p:required="required" />
+					<input  type="password"  placeholder="Password"  value="#{user.password}"    p:required="required"
+						id="password" />
+					<h:commandButton class="button" value="Submit" action="#{user.login()}" />
+				</div>
+				<a href="register.xhtml">New User? Register</a>
+				<p />
+				<a href="recoverpassword.xhtml">Forgot Password?</a>
+				<p />
+				<h:outputText value="#{user.message}" />
+			</h:form>
+		</fieldset>
+		<ui:include src="footer.xhtml"/>
+	</ui:define>
+
+</ui:composition>

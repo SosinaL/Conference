@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                template="master.xhtml"
+                xmlns:p="http://java.sun.com/jsf/passthrough"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f = "http://java.sun.com/jsf/core">
+
+	<ui:define name="title">Autor Edit</ui:define>
+	 
+    <ui:define name="content">
+        <fieldset  title="Autor Edit">
+        	<LEGEND><b>Edit Information</b></LEGEND>
+            <h:form prependId="false">
+                <h:inputHidden  id="id" value="#{autor.autor_id}" />
+            	Name 
+                <br/>
+                <h:inputText  id="name" value="#{autor.emri}" 
+                              p:required="required" p:placeholder="Name" />
+                <p/>
+                Email 
+                <br/>
+                <h:inputText  id="birthdate" value="#{autor.email}" 
+                              p:required="required" p:placeholder="birthdate" />
+                Mbiemri 
+                <br/>
+                <h:inputText  id="birthdate" value="#{autor.mbiemri" 
+                              p:required="required" p:placeholder="birthdate" />
+                <p/>
+		        <br/>
+                <h:commandButton  value="Edit" action="#{autor.editAutor(autor.aktor_id)}" />
+                <br/>
+                <h:outputText value="#{actor.message}" />
+            </h:form>
+        </fieldset>
+    </ui:define>
+
+</ui:composition>

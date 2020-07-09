@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+	    xmlns:f="http://java.sun.com/jsf/core"
+	    xmlns:h="http://java.sun.com/jsf/html"
+	    xmlns:ui="http://java.sun.com/jsf/facelets"
+	    xmlns:p="http://primefaces.org/ui">
+	
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputScript library="js" name="jquery.js" />
+         <h:outputScript library="js" name="myscript.js" />
+        <h:outputStylesheet library="css" name="default.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+        <h:outputStylesheet library="css" name="owl.carousel.css" />
+        <h:outputStylesheet library="css" name="animate.css" />
+        <h:outputStylesheet library="css" name="prettyPhoto.css" />
+        <h:outputStylesheet library="css" name="flexslider.css" />
+        <h:outputStylesheet library="css" name="bootstrap.min.css" />
+        <!-- CSS -->
+        
+   <script>
+    jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+        <title>  <ui:insert name="title"></ui:insert></title>
+    </h:head>
+
+    <h:body>
+      
+        <!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		
+	
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<h3>CONFERENCE<BR />REVIEW</h3>
+					</div><!-- //LOGO -->
+					
+					<!-- SEARCH FORM -->
+					<div id="search-form" class="pull-right">
+						<h:form method="get" action="#">
+							<input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+						</h:form>
+					</div><!-- SEARCH FORM -->
+					
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="home.xhtml">Home</a></li>
+								
+								<li class="scroll_btn"><a href="articles.xhtml" >Articles</a></li>
+								
+								<li class="scroll_btn"><a href="writers.xhtml" >Writers</a></li>
+								<li class="scroll_btn"><a href="reviewers.xhtml" >Reviewers</a></li>
+								<li class="scroll_btn last"><a href="review.xhtml" >Review</a></li>
+								<li class="sub-menu">
+									<li class="scroll_btn last"><a href="review.xhtml" >Profile</a></li>
+        </li>
+							</ul>
+						</nav>
+						</div>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+
+		
+    </h:body>
+
+</html>

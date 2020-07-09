@@ -1,0 +1,131 @@
+body {
+    background-color: #ffffff;
+    font-size: 11pt;
+    font-family: Verdana;
+}
+
+a {
+    font-weight: bold;
+}
+
+.menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: silver;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h2{
+    
+    color:red;
+}
+.user {
+    float: right;
+    position:relative;
+    
+}
+
+th {
+    
+    background-color:navy;
+    font-weight: bold;
+    color:white;
+}
+
+td {
+    
+    text-align: center;
+}
+
+.header {
+     background-color: white;
+     color:red;
+     font-size:24pt;
+     font-weight: bold;
+     font-family: sans-sarif;
+     letter-spacing: 5pt;
+     text-align: center;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin-bottom: 5px;
+     margin-top: 5px;
+}
+
+ .But{
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 19px;
+            color: salmon;
+            padding: 6px 4px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(165, 76, 67);
+        }    
+    
+    a: link{
+    color: white;}
+    
+    a:hover{
+    color:white;
+     font-style: oblique;
+     text-shadow: 1px 1px 2px red;
+     text-align: center;
+    cursor: pinter; }
+    
+    a:active{
+    color:red;
+    font-style: oblique;
+     text-shadow: 1px 1px 2px white;
+     text-align: center;
+    }
+
+
+.login-register-form-section {
+	max-width: 350px;
+	margin: 0 auto;
+}
+3
+4
+5
+ 
+.login-register-form-section i {
+	width: 10px;
+}.login-register-form-section .nav-tabs > li > a {
+	color: #2abb9b;
+}
+ 
+.login-register-form-section .nav-tabs > li.active > a {
+	background-color: #2abb9b;
+	border-color: #2abb9b;
+	color: white;
+}
+
+
+ 
+.login-register-form-section .nav-tabs > li > a, 
+.login-register-form-section .nav-tabs > li.active > a {
+	width: 160px;
+    text-align: center;	
+    border-radius: 0;
+}
+
+ 
+.login-register-form-section .nav-tabs {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}.login-register-form-section .btn-custom {
+	width: 100%;
+	background-color: #2abb9b;
+	border-color: #2abb9b;
+	margin-bottom: 0.5em;
+	border-radius: 0;
+}
+ 
+.login-register-form-section .btn-custom:hover {
+	width: 100%;
+	background-color: #48A497;
+	border-color: #2abb9b;
+}.login-register-form-section .form-group {
+	padding: 0 20px;
+}
